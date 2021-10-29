@@ -1,8 +1,7 @@
 package com.yehor;
 
 import com.github.javafaker.Faker;
-import com.yehor.algorithms.BubbleSort;
-import com.yehor.algorithms.SelectionSort;
+import com.yehor.algorithms.QuickSort;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
@@ -11,11 +10,12 @@ import java.util.stream.Stream;
 public class SortingAlgo {
 
     private static final Faker faker = new Faker();
-    private static final int SIZE = 100;
+    private static final int SIZE = 10_000;
 
     public static void main(String[] args) {
-        displayWithTimer(() -> SelectionSort.operateOn(newArrayOf(SIZE)), "Selection Sort");
-        displayWithTimer(() -> BubbleSort.operateOn(newArrayOf(SIZE)), "Bubble Sort");
+        //displayWithTimer(() -> SelectionSort.operateOn(newArrayOf(SIZE)), "Selection Sort");
+        //displayWithTimer(() -> BubbleSort.operateOn(newArrayOf(SIZE)), "Bubble Sort");
+        displayWithTimer(() -> QuickSort.operateOn(newArrayOf(SIZE)), "Quick Sort");
     }
 
     private static String[] newArrayOf(int size) {
