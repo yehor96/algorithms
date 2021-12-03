@@ -1,4 +1,4 @@
-package com.yehor.algorithms;
+package com.yehor.sorting.algorithms;
 
 public class BubbleSort {
 

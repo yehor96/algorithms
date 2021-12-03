@@ -1,4 +1,4 @@
-package com.yehor;
+package com.yehor.contains;
 
 import com.github.javafaker.Faker;
 

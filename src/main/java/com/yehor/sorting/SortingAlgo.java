@@ -1,7 +1,7 @@
-package com.yehor;
+package com.yehor.sorting;
 
 import com.github.javafaker.Faker;
-import com.yehor.algorithms.QuickSort;
+import com.yehor.sorting.algorithms.QuickSort;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
